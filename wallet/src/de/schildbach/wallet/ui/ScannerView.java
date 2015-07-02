@@ -34,7 +34,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.google.zxing.ResultPoint;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 /**
  * @author Andreas Schildbach

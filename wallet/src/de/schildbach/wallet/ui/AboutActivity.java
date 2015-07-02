@@ -31,7 +31,7 @@ import com.google.bitcoin.core.VersionMessage;
 
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 
 /**

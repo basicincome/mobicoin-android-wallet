@@ -42,7 +42,7 @@ import android.os.Looper;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.util.Bluetooth;
 import de.schildbach.wallet.util.PaymentProtocol;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 /**
  * @author Andreas Schildbach

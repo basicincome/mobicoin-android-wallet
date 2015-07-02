@@ -2,10 +2,10 @@ FILES
 
 Your wallet and your private keys are stored in app internal storage:
 
-/data/data/unpaybank.mobicoin.wallet/files/wallet-protobuf (MODE_PRIVATE)
+/data/data/unpaybank.unpay.wallet/files/wallet-protobuf (MODE_PRIVATE)
 	Wallet for Mainnet
 
-/data/data/unpaybank.mobicoin.wallet/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
+/data/data/unpaybank.unpay.wallet/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
 	Wallet for Testnet
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
@@ -13,7 +13,7 @@ which should be compatible between clients using darkcoinj.
 
 Certain actions cause automatic rolling backups of your private keys to app-private storage:
 
-/data/data/unpaybank.mobicoin.wallet/files/key-backup-base58 (MODE_PRIVATE)
+/data/data/unpaybank.unpay.wallet/files/key-backup-base58 (MODE_PRIVATE)
 	Automatic backups of private keys for Mainnet
 
 

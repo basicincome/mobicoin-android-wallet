@@ -95,7 +95,7 @@ public class Constants
 	public static final int LOCAL_PRECISION = 8;        //altcoins need more digits in BTC
     //TODO: What about these two things?
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
-	public static final String REPORT_EMAIL = "mobicoinbankapp@gmail.com";
+	public static final String REPORT_EMAIL = "unpaybankapp@gmail.com";
 
 	public static final int UBTC_MAX_PRECISION = 2;
 
@@ -116,8 +116,8 @@ public class Constants
 
 	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?action=profile;u=2062";
 
-	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/mobicoinbankapp";
-	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/mobicoinbankapp";
+	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/unpaybankapp";
+	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/unpaybankapp";
 
 	public static final String COMMUNITY_GOOGLEPLUS_URL = "https://plus.google.com/communities/105515929887248493912";
 

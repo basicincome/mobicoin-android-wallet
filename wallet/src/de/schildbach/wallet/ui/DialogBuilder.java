@@ -27,7 +27,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 /**
  * @author Andreas Schildbach

@@ -55,7 +55,7 @@ import com.google.bitcoin.core.VersionMessage;
 
 import de.schildbach.wallet.service.BlockchainService;
 import de.schildbach.wallet.service.BlockchainServiceImpl;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 /**
  * @author Andreas Schildbach

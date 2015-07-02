@@ -63,7 +63,7 @@ import de.schildbach.wallet.ui.InputParser.BinaryInputParser;
 import de.schildbach.wallet.ui.InputParser.StreamInputParser;
 import de.schildbach.wallet.ui.InputParser.StringInputParser;
 import de.schildbach.wallet.util.*;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 import org.bitcoin.protocols.payments.Protos.Payment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

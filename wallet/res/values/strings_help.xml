@@ -4,11 +4,11 @@
 	<string name="help_wallet">
 <![CDATA[
 		<p>
-			The upper left part of the screen displays your selected Mobicoin address that other people need to know in order to send you Dashs.
+			The upper left part of the screen displays your selected UNPay address that other people need to know in order to send you Dashs.
 			Tap to change the address.
 		</p>
 		<p>
-			The QR code on the right contains your Mobicoin address and can be used for scanning by another party.
+			The QR code on the right contains your UNPay address and can be used for scanning by another party.
 			Tap on the QR code to get a larger version of it.
 		</p>
 		<p>
@@ -31,7 +31,7 @@
 	<string name="help_request_coins">
 <![CDATA[
 		<p>
-			Using this dialog, you can request coins from another person (who should already have installed Mobicoin Wallet).
+			Using this dialog, you can request coins from another person (who should already have installed UNPay Wallet).
 		</p>
 		<p>
 			First, you can enter an amount of Dashs to request.
@@ -39,7 +39,7 @@
 		<p>
 			Then, you either have the generated QR code scanned by the other person.
 			Or, you can send your request to a remote person with the share button in the action bar.
-			The other person will have to click the Mobicoin URL.
+			The other person will have to click the UNPay URL.
 		</p>
 		<p>
 			Either way, the other person will be presented a dialog for sending coins with all fields pre-populated.
@@ -51,12 +51,12 @@
 <![CDATA[
 		<p>
 			You have initiated the process of sending coins.
-			You came here either through the main screen or by clicking on a Mobicoin URL in your mobile browser.
+			You came here either through the main screen or by clicking on a UNPay URL in your mobile browser.
 		</p>
 		<p>
-			First, you enter the Mobicoin address to pay to.
+			First, you enter the UNPay address to pay to.
 			The address will autocomplete from known entries in your address book.
-			You can also scan QR codes with Mobicoin addresses or Mobicoin requests by pressing the QR button in the action bar.
+			You can also scan QR codes with UNPay addresses or UNPay requests by pressing the QR button in the action bar.
 		</p>
 		<p>
 			Next, you can see how many Dashs you can spend at the moment.
@@ -67,7 +67,7 @@
 		</p>
 		<p>
 			You can enter a payment while being offline.
-			It will be sent on next restart of Mobicoin Wallet.
+			It will be sent on next restart of UNPay Wallet.
 			If you want a payment to be processed as fast as possible, make sure you are well connected (i.e. on a WLAN).
 		</p>
 		<p>

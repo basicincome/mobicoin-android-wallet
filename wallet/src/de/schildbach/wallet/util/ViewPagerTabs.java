@@ -32,7 +32,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
 import android.view.View;
 
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 
 /**

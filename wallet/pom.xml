@@ -4,11 +4,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>mobicoinwallet</artifactId>
+	<artifactId>unpaywallet</artifactId>
 	<packaging>apk</packaging>
 
 	<version>1.0.0</version>
-	<name>Mobicoin Wallet</name>
+	<name>UNPay Wallet</name>
 
 
 	<parent>

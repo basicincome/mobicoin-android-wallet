@@ -29,7 +29,7 @@ import com.google.bitcoin.core.*;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.util.Base43;
-import unpaybank.mobicoin.wallet.R;
+import unpaybank.unpay.wallet.R;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -2,7 +2,7 @@
 <!-- Need to update this for the coin -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="unpaybank.mobicoin.wallet"
+	package="unpaybank.unpay.wallet"
 	android:installLocation="internalOnly"
 
 	android:versionCode="010"
@@ -193,17 +193,17 @@
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.AddressBookProvider"
-			android:authorities="unpaybank.mobicoin.wallet.address_book"
+			android:authorities="unpaybank.unpay.wallet.address_book"
 			android:exported="false" />
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.ExchangeRatesProvider"
-			android:authorities="unpaybank.mobicoin.wallet.exchange_rates"
+			android:authorities="unpaybank.unpay.wallet.exchange_rates"
 			android:exported="false" />
 
 		<receiver
 			android:name="de.schildbach.wallet.WalletBalanceWidgetProvider"
-			android:label="Mobicoin Wallet Balance" >
+			android:label="UNPay Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
