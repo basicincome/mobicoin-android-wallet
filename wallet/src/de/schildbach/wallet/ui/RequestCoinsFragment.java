@@ -217,19 +217,16 @@ public final class RequestCoinsFragment extends SherlockFragment
 	{
 		super.onResume();
 
-		amountCalculatorLink.setListener(new CurrencyAmountView.Listener()
-		{
-			@Override
-			public void changed()
-			{
-				updateView();
-			}
+		amountCalculatorLink.setListener(new CurrencyAmountView.Listener() {
+            @Override
+            public void changed() {
+                updateView();
+            }
 
-			@Override
-			public void focusChanged(final boolean hasFocus)
-			{
-			}
-		});
+            @Override
+            public void focusChanged(final boolean hasFocus) {
+            }
+        });
 
 		loaderManager.initLoader(ID_RATE_LOADER, null, rateLoaderCallbacks);
 
@@ -333,7 +330,7 @@ public final class RequestCoinsFragment extends SherlockFragment
 	{
 		final Intent intent = new Intent(Intent.ACTION_SEND);
 		intent.setType("text/plain");
-		intent.putExtra(Intent.EXTRA_TEXT, determineBitcoinRequestStr(false));
+		intent.putExtra(Intent.EXTRA_TEXT, determineBitcoinRequestFormalString());
 		startActivity(Intent.createChooser(intent, getString(R.string.request_coins_share_dialog_title)));
 	}
 
@@ -389,6 +386,22 @@ public final class RequestCoinsFragment extends SherlockFragment
 		}
 		return uri.toString();
 	}
+
+    private String determineBitcoinRequestFormalString()
+    {
+        final Address address = application.determineSelectedAddress();
+        final BigInteger amount = amountCalculatorLink.getAmount();
+
+        final StringBuilder msg = new StringBuilder();
+        msg.append(address.toString());
+        msg.append("\n");
+        msg.append(CoinDefinition.coinName);
+        msg.append(" amount request:");
+        msg.append(amount.toString());
+        msg.append("\n");
+
+        return msg.toString();
+    }
 
 	private byte[] determinePaymentRequest(final boolean includeBluetoothMac)
 	{
