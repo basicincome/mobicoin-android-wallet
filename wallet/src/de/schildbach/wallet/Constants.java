@@ -75,7 +75,8 @@ public class Constants
 	public static final long BLOCKCHAIN_STATE_BROADCAST_THROTTLE_MS = DateUtils.SECOND_IN_MILLIS;
 	public static final long BLOCKCHAIN_UPTODATE_THRESHOLD_MS = DateUtils.HOUR_IN_MILLIS;
 
-	public static final String CURRENCY_CODE_BTC = CoinDefinition.coinTicker;
+	public static final String CURRENCY_CODE_KBTC = "k" + CoinDefinition.coinTicker;
+	public static final String CURRENCY_CODE_BTC =  CoinDefinition.coinTicker;
 	public static final String CURRENCY_CODE_MBTC = "m" + CoinDefinition.coinTicker;
 	public static final String CURRENCY_CODE_UBTC = "µ" + CoinDefinition.coinTicker;
 
@@ -89,15 +90,17 @@ public class Constants
 	public static final int ADDRESS_FORMAT_GROUP_SIZE = 4;
 	public static final int ADDRESS_FORMAT_LINE_SIZE = 12;
 
+	public static final int KBTC_MAX_PRECISION = 8;
 	public static final int BTC_MAX_PRECISION = 8;
 	public static final int MBTC_MAX_PRECISION = 5;
+	public static final int UBTC_MAX_PRECISION = 2;
 
 	public static final int LOCAL_PRECISION = 8;        //altcoins need more digits in BTC
     //TODO: What about these two things?
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
 	public static final String REPORT_EMAIL = "unpaybankapp@gmail.com";
 
-	public static final int UBTC_MAX_PRECISION = 2;
+
 
 
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";

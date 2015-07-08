@@ -7,18 +7,18 @@
 	<string name="app_name">UNPay Wallet (beta)</string>
 
 	<string-array name="preferences_precision_values">
-		<item>8</item>
+		<!--<item>8</item>-->
+		<!--<item>6</item>-->
 		<item>6</item>
-		<item>4</item>
-		<item>2/3</item>
-		<item>0/6</item>
+		<item>4/3</item>
+		<item>2/6</item>
 	</string-array>
 	<string-array name="preferences_precision_labels">
-		<item>MCP, 8 digits</item>
-		<item>MCP, 6 digits</item>
+		<!--<item>MCP, 8 digits</item>-->
+		<!--<item>MCP, 6 digits</item>-->
+		<item>kMCP, 6 digits</item>
 		<item>MCP, 4 digits</item>
 		<item>mMCP, 2 digits</item>
-		<item>µMCP, no digits</item>
 	</string-array>
 
 </resources>

@@ -402,7 +402,7 @@ public final class RequestCoinsFragment extends SherlockFragment
 			msg.append ("0");
 		}
 		else {
-			msg.append(Utils.bitcoinValueToPlainString(amount));
+			msg.append(UnpayValue.toPlainString(amount));
 		}
 
         msg.append("\n");

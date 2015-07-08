@@ -109,8 +109,10 @@ public class Configuration
 		final int btcShift = getBtcShift();
 
 		if (btcShift == 0)
-			return Constants.CURRENCY_CODE_BTC;
+			return Constants.CURRENCY_CODE_KBTC;
 		else if (btcShift == 3)
+			return Constants.CURRENCY_CODE_BTC;
+		else if (btcShift == 6)
 			return Constants.CURRENCY_CODE_MBTC;
 		else
 			return Constants.CURRENCY_CODE_UBTC;
