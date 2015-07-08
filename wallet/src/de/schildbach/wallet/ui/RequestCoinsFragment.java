@@ -47,6 +47,7 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.google.bitcoin.core.Address;
 import com.google.bitcoin.core.CoinDefinition;
+import com.google.bitcoin.core.Utils;
 import com.google.bitcoin.core.Wallet;
 import com.google.bitcoin.uri.BitcoinURI;
 import de.schildbach.wallet.Configuration;
@@ -397,7 +398,13 @@ public final class RequestCoinsFragment extends SherlockFragment
         msg.append("\n");
         msg.append(CoinDefinition.coinName);
         msg.append(" amount request:");
-        msg.append(amount.toString());
+		if(amount == null) {
+			msg.append ("0");
+		}
+		else {
+			msg.append(Utils.bitcoinValueToPlainString(amount));
+		}
+
         msg.append("\n");
 
         return msg.toString();
