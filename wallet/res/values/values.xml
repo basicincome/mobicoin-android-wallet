@@ -16,9 +16,9 @@
 	<string-array name="preferences_precision_labels">
 		<!--<item>MCP, 8 digits</item>-->
 		<!--<item>MCP, 6 digits</item>-->
-		<item>kMCP, 6 digits</item>
-		<item>MCP, 4 digits</item>
-		<item>mMCP, 2 digits</item>
+		<item>kUNP, 6 digits</item>
+		<item>UNP, 4 digits</item>
+		<item>mUNP, 2 digits</item>
 	</string-array>
 
 </resources>
