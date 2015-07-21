@@ -40,7 +40,9 @@ import com.google.bitcoin.core.ECKey;
 import com.google.bitcoin.core.Wallet;
 
 import de.schildbach.wallet.AddressBookProvider;
+import de.schildbach.wallet.Configuration;
 import de.schildbach.wallet.Constants;
+import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.util.GenericUtils;
 import de.schildbach.wallet.util.WalletUtils;
 import unpaybank.unpay.wallet.R;
@@ -52,6 +54,8 @@ public class WalletAddressesAdapter extends BaseAdapter
 {
 	private final Context context;
 	private final Wallet wallet;
+    private WalletApplication application;
+    private Configuration config;
 	private final DateFormat dateFormat;
 	private final int colorSignificant;
 	private final int colorInsignificant;
@@ -61,12 +65,14 @@ public class WalletAddressesAdapter extends BaseAdapter
 	private final List<ECKey> keys = new ArrayList<ECKey>();
 	private String selectedAddress = null;
 
-	public WalletAddressesAdapter(final Context context, @Nonnull final Wallet wallet)
+	public WalletAddressesAdapter(final Context context, @Nonnull final Wallet wallet, @Nonnull final Configuration config)
 	{
 		final Resources res = context.getResources();
 
 		this.context = context;
 		this.wallet = wallet;
+        this.config = config;
+
 		dateFormat = android.text.format.DateFormat.getDateFormat(context);
 		colorSignificant = res.getColor(R.color.fg_significant);
 		colorInsignificant = res.getColor(R.color.fg_insignificant);
@@ -132,12 +138,15 @@ public class WalletAddressesAdapter extends BaseAdapter
 		addressView.setText(WalletUtils.formatAddress(address, Constants.ADDRESS_FORMAT_GROUP_SIZE, Constants.ADDRESS_FORMAT_LINE_SIZE));
 		addressView.setTextColor(isRotateKey ? colorInsignificant : colorSignificant);
 
-        final TextView balanceView = (TextView) row.findViewById(R.id.address_book_row_balance);
-        //balanceView.setAlwaysSigned(true);
-        //balanceView.setPrecision(0, 0);
-        balanceView.setText(GenericUtils.formatValue(balance, Constants.BTC_MAX_PRECISION, 0));
-        //balanceView.setText(balance.toString());
-        balanceView.setTextColor(isRotateKey ? colorInsignificant : colorSignificant);
+        final CurrencyTextView balanceView = (CurrencyTextView) row.findViewById(R.id.address_book_row_balance);
+
+		balanceView.setVisibility(View.VISIBLE);
+		balanceView.setPrecision(config.getBtcPrecision(), config.getBtcShift());
+		balanceView.setPrefix(config.getBtcPrefix());
+		balanceView.setAmount(balance);
+
+//        balanceView.setText(GenericUtils.formatValue(balance, Constants.BTC_MAX_PRECISION, 0));
+//        balanceView.setTextColor(isRotateKey ? colorInsignificant : colorSignificant);
 
 
 		final TextView labelView = (TextView) row.findViewById(R.id.address_book_row_label);
